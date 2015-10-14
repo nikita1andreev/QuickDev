@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/projectsk?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">123412</property>
+    <property name="hibernate.show_sql">true</property>
+    <!-- <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+    <property name="hbm2ddl.auto">update</property>    
+    -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="current_session_context_class">thread</property>
+    <mapping class="a1.entity.Events"/>
+    <mapping class="a1.entity.Planing"/>
+    <mapping class="a1.entity.StatusChange"/>
+    <mapping class="a1.entity.Docs"/>
+    <mapping class="a1.entity.Otherthings"/>
+    <mapping class="a1.entity.Versions"/>
+    <mapping class="a1.entity.Contact"/>
+    <mapping class="a1.entity.Materials"/>
+    <mapping class="a1.entity.Criminalcase"/>
+    <mapping class="a1.entity.Status"/>
+    <mapping class="a1.entity.Event_types"/>
+    <mapping class="a1.entity.Responsible"/>
+    <mapping class="a1.entity.Topic"/>
+    <mapping class="a1.entity.Post"/>
+    <!--<mapping resource="a1/entity/Supplementalinformation.hbm.xml"/>
+    
+    <mapping resource="a1/entity/Events.hbm.xml"/>
+    <mapping resource="a1/entity/Planing.hbm.xml"/>
+    <mapping resource="a1/entity/StatusChange.hbm.xml"/>
+    <mapping resource="a1/entity/Docs.hbm.xml"/>
+    <mapping resource="a1/entity/Otherthings.hbm.xml"/>
+    <mapping resource="a1/entity/Versions.hbm.xml"/>
+    <mapping resource="a1/entity/Contacts.hbm.xml"/>
+    <mapping resource="a1/entity/Materials.hbm.xml"/>
+    <mapping resource="a1/entity/Criminalcase.hbm.xml"/>
+    <mapping resource="a1/entity/hibernate.hbm.xml"/>
+    <mapping resource="a1/entity/Status.hbm.xml"/>
+    <mapping class="a1.entity.Events"/>
+    <mapping class="a1.entity.Versions"/>-->
+  </session-factory>
+</hibernate-configuration>

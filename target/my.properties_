@@ -1,0 +1,10 @@
+#
+#Sun Aug 23 19:54:28 GMT+04:00 2015
+bases=<list>\n  <map>\n    <entry>\n      <string>name</string>\n      <string>904932396</string>\n    </entry>\n    <entry>\n      <string>id</string>\n      <string>904932396</string>\n    </entry>\n    <entry>\n      <string>base</string>\n      <string>jdbc\:mysql\://localhost\:3306/projectsk?zeroDateTimeBehavior\=convertToNull</string>\n    </entry>\n  </map>\n</list>
+login=
+name=\u0418\u0432\u0430\u043D\u043E\u0432
+password=
+zvan=a
+dolg=a
+lastBase=jdbc\:mysql\://localhost\:3306/projectsk?zeroDateTimeBehavior\=convertToNull
+id=126738945

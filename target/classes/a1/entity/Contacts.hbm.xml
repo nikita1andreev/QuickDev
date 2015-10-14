@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28.04.2015 1:36:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="projectsk" name="a1.entity.Contacts" optimistic-lock="version" table="contacts">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="f" type="string">
+      <column length="150" name="f" not-null="true"/>
+    </property>
+    <property name="i" type="string">
+      <column length="150" name="i" not-null="true"/>
+    </property>
+    <property name="o" type="string">
+      <column length="150" name="o"/>
+    </property>
+    <property name="status" type="string">
+      <column length="150" name="status" not-null="true"/>
+    </property>
+    <property name="address" type="string">
+      <column length="500" name="address" not-null="true"/>
+    </property>
+    <property name="phone" type="string">
+      <column length="100" name="phone" not-null="true"/>
+    </property>
+    <property name="description" type="string">
+      <column length="65535" name="description" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 28.04.2015 1:36:58 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="projectsk" name="a1.entity.Events" optimistic-lock="version" table="events">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="name" type="string">
+      <column length="1000" name="name"/>
+    </property>
+    <property name="start" type="timestamp">
+      <column length="19" name="start"/>
+    </property>
+    <property name="description" type="string">
+      <column length="65535" name="description" not-null="true"/>
+    </property>
+    <property name="linkType" type="string">
+      <column length="50" name="link_type"/>
+    </property>
+    <property name="linkObject" type="java.lang.Integer">
+      <column name="link_object"/>
+    </property>
+<many-to-one name="Version" 
+class="a1.entity.Versions"
+column="link_object" 
+not-null="true"
+insert="false" 
+update="false" />  
+  
+    <property name="end" type="timestamp">
+      <column length="19" name="end"/>
+    </property>
+  </class>
+</hibernate-mapping>

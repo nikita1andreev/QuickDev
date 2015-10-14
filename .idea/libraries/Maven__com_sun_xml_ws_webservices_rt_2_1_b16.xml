@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sun.xml.ws:webservices-rt:2.1-b16">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/xml/ws/webservices-rt/2.1-b16/webservices-rt-2.1-b16.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/xml/ws/webservices-rt/2.1-b16/webservices-rt-2.1-b16-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sun/xml/ws/webservices-rt/2.1-b16/webservices-rt-2.1-b16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
