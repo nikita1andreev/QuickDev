@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package sk.ui;
-
+/////////////////////////////////////////////////
 import a1.annotations.Forms;
 import a1.entity.Contacts;
 import a1.entity.Events;
@@ -736,7 +736,7 @@ public class Main extends javax.swing.JFrame {
 				save_properties();
 			};
 			if (!props.containsKey("languge")) {
-				props.put("languge", "Eng");
+				props.put("languge", "");
 			}
 			if (!props.containsKey("bases")) {
 				save_properties();
