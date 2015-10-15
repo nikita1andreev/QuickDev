@@ -182,14 +182,15 @@ public class FormElement extends JFrame {
 				//for(Entry ent: EditFields)
 				Iterator it = (Iterator) EditFields.entrySet().iterator();
 				while(it.hasNext()){
-					Entry<Field,JTextFieldPlus> ent = (Entry<Field,JTextFieldPlus>)it.next();
+					Entry<String,JTextFieldPlus> ent = (Entry<String,JTextFieldPlus>)it.next();
 					try {
-						ent.getKey().setAccessible(true);
+						Field f = formObject.getClass().getDeclaredField(ent.getKey());
+						f.setAccessible(true);
 						if (!ent.getValue().isSimpleType())
-							ent.getKey().set(formObject, ent.getValue().getValueObject());
+							f.set(formObject, ent.getValue().getValueObject());
 						else 
-							ent.getKey().set(formObject, ut.toObject(ent.getKey().getType(),ent.getValue().getText()));
-					} catch (IllegalArgumentException | IllegalAccessException e1) {
+							f.set(formObject, ut.toObject(f.getType(),ent.getValue().getText()));
+					} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
